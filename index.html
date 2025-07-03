@@ -1,155 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filmmaking Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: "Times New Roman", serif;
-            background-color: #121212;
-            color: #e0e0e0;
-            background-image: url('https://www.transparenttextures.com/patterns/black-paper.png'); /* Optional grunge texture */
-        }
+  <meta charset="UTF-8">
+  <title>My Filmmaking Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #b2ff59;
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      padding: 0;
+    }
 
-        header {
-            background-color: #0a0a0a;
-            padding: 2rem 1rem;
-            text-align: center;
-            border-bottom: 2px solid #0f3f2b;
-        }
+    header, section, footer {
+      padding: 20px;
+    }
 
-        header h1 {
-            color: #0f3f2b;
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
+    header {
+      background-color: #000;
+      text-align: center;
+      border-bottom: 3px dashed #b2ff59;
+    }
 
-        header p {
-            color: #999;
-            margin-bottom: 1rem;
-        }
+    h1 {
+      font-size: 32px;
+      margin: 0;
+      letter-spacing: 2px;
+    }
 
-        .video-container {
-            position: absolute;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            margin: 1rem auto;
-            max-width: 2000px;
-        }
+    h2 {
+      font-size: 24px;
+      border-left: 4px solid #76ff03;
+      padding-left: 10px;
+      margin-top: 40px;
+    }
 
-        .video-container iframe {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
+    .highlight {
+      color: #00ff00;
+      font-weight: bold;
+      margin: 10px 0;
+      display: block;
+    }
 
-        section {
-            padding: 2rem 1rem;
-            max-width: 900px;
-            margin: auto;
-        }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
 
-        h2 {
-            color: #1b5e3c;
-            border-bottom: 1px solid #1b5e3c;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-        }
+    .video-wrapper {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
 
-        .project {
-            margin-bottom: 2rem;
-            border-bottom: 1px dashed #2e2e2e;
-            padding-bottom: 1rem;
-        }
+    iframe {
+      width: 100%;
+      max-width: 640px;
+      height: 360px;
+      border: none;
+    }
 
-        .project h3 {
-            color: #0f3f2b;
-            margin-bottom: 0.3rem;
-        }
+    .project {
+      background-color: #111;
+      padding: 20px;
+      margin: 20px 0;
+      border: 1px solid #333;
+    }
 
-        .project p {
-            margin-bottom: 0.5rem;
-            color: #aaa;
-        }
+    .project h3 {
+      color: #76ff03;
+      margin-top: 0;
+    }
 
-        footer {
-            background-color: #0a0a0a;
-            color: #666;
-            text-align: center;
-            padding: 2rem 1rem;
-            border-top: 2px solid #0f3f2b;
-        }
+    .project p {
+      color: #cfcfcf;
+      font-size: 14px;
+    }
 
-        a {
-            color: #2ecc71;
-            text-decoration: none;
-        }
+    a {
+      color: #76ff03;
+      text-decoration: none;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #000;
+      text-align: center;
+      border-top: 3px dashed #b2ff59;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 26px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      iframe {
+        height: 200px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 22px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      iframe {
+        height: 180px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>My Filmmaking Portfolio</h1>
-        <p>A visual journey through the lens</p>
-        <div class="video-container">
-            <!-- Highlighted Showreel -->
-            <iframe src="https://www.youtube.com/embed/qrRj-g6c_sw" allowfullscreen></iframe>
-        </div>
-    </header>
+  <header>
+    <h1>MY FILMMAKING PORTFOLIO</h1>
+    <span class="highlight">SHOWREEL</span>
+    <div class="video-wrapper">
+      <!-- Replace VIDEO_ID with your YouTube showreel ID -->
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+    </div>
+  </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            <!-- Add your bio here -->
-            I am a filmmaker drawn to raw stories, unique visuals, and emotionally grounded narratives. With a background in directing, cinematography, and editing, I bring a distinct voice to every project.
-        </p>
-        <!-- You can expand this section as needed -->
-    </section>
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>
+      <!-- Add your personal filmmaker bio here -->
+      I'm a visual storyteller with a passion for directing and editing. My work focuses on emotion, atmosphere, and texture.
+      <!-- Leave room for future additions -->
+    </p>
+  </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
+  <section id="projects" class="container">
+    <h2>Selected Projects</h2>
 
-        <div class="project">
-            <h3>Project Title One</h3>
-            <p><strong>Role:</strong> Director, Editor</p>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" allowfullscreen></iframe>
-            </div>
-            <p>A short narrative film focusing on isolation and inner conflict. Shot on 16mm.</p>
-        </div>
+    <div class="project">
+      <h3>Project Title 1</h3>
+      <p>Role: Director, Editor</p>
+      <div class="video-wrapper">
+        <!-- Replace VIDEO_ID -->
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+      </div>
+    </div>
 
-        <div class="project">
-            <h3>Project Title Two</h3>
-            <p><strong>Role:</strong> Cinematographer</p>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" allowfullscreen></iframe>
-            </div>
-            <p>Music video blending dreamlike visuals with handheld intimacy.</p>
-        </div>
+    <div class="project">
+      <h3>Project Title 2</h3>
+      <p>Role: Cinematographer</p>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+      </div>
+    </div>
 
-        <!-- Add more project blocks as needed -->
-    </section>
+    <!-- Duplicate project blocks as needed -->
+  </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p><strong>Email:</strong> <a href="mailto:yourname@example.com">yourname@example.com</a></p>
-        <p><strong>Instagram:</strong> <a href="https://instagram.com/yourhandle" target="_blank">@yourhandle</a></p>
-        <!-- You can add more platforms or links -->
-    </section>
+  <section id="contact" class="container">
+    <h2>Contact Info</h2>
+    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/yourhandle" target="_blank">@yourhandle</a></p>
+    <!-- Add other social or contact info -->
+  </section>
 
-    <footer>
-        <p>© 2025 Your Name | All Rights Reserved</p>
-        <p>Crafted in the shadows with green light</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    <p>More updates coming soon...</p>
+  </footer>
 
 </body>
 </html>
