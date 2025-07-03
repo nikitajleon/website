@@ -3,58 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Filmmaking Portfolio</title>
+    <title>Filmmaking Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            padding: 0;
+            font-family: "Times New Roman", serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            background-image: url('https://www.transparenttextures.com/patterns/black-paper.png'); /* Optional grunge texture */
         }
+
         header {
-            background-color: #1f1f1f;
-            color: #00ff88;
+            background-color: #0a0a0a;
             padding: 2rem 1rem;
             text-align: center;
+            border-bottom: 2px solid #0f3f2b;
         }
-        section {
-            padding: 2rem 1rem;
-            max-width: 1000px;
-            margin: auto;
+
+        header h1 {
+            color: #0f3f2b;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
         }
-        h2 {
-            color: #00cc66;
-            border-bottom: 2px solid #00cc66;
-            padding-bottom: 0.5rem;
+
+        header p {
+            color: #999;
+            margin-bottom: 1rem;
         }
+
         .video-container {
             position: relative;
             padding-bottom: 56.25%;
             height: 0;
-            margin-bottom: 1rem;
+            overflow: hidden;
+            margin: 1rem auto;
+            max-width: 800px;
         }
+
         .video-container iframe {
             position: absolute;
             width: 100%;
             height: 100%;
             border: 0;
         }
+
+        section {
+            padding: 2rem 1rem;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #1b5e3c;
+            border-bottom: 1px solid #1b5e3c;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
         .project {
             margin-bottom: 2rem;
-            border-bottom: 1px solid #ccc;
+            border-bottom: 1px dashed #2e2e2e;
             padding-bottom: 1rem;
         }
+
+        .project h3 {
+            color: #0f3f2b;
+            margin-bottom: 0.3rem;
+        }
+
+        .project p {
+            margin-bottom: 0.5rem;
+            color: #aaa;
+        }
+
         footer {
-            background-color: #1f1f1f;
-            color: #ccc;
+            background-color: #0a0a0a;
+            color: #666;
             text-align: center;
             padding: 2rem 1rem;
-            margin-top: 2rem;
+            border-top: 2px solid #0f3f2b;
         }
+
         a {
-            color: #00ff88;
+            color: #2ecc71;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
@@ -64,10 +99,10 @@
 
     <header>
         <h1>My Filmmaking Portfolio</h1>
-        <p>Welcome to my visual journey in film</p>
+        <p>A visual journey through the lens</p>
         <div class="video-container">
-            <!-- Showreel Embed -->
-            <iframe src="https://www.youtube.com/embed/YOUR_SHOWREEL_ID_HERE" allowfullscreen></iframe>
+            <!-- Highlighted Showreel -->
+            <iframe src="https://www.youtube.com/embed/YOUR_SHOWREEL_ID" allowfullscreen></iframe>
         </div>
     </header>
 
@@ -75,9 +110,9 @@
         <h2>About Me</h2>
         <p>
             <!-- Add your bio here -->
-            I’m a filmmaker passionate about storytelling through visuals. I specialize in directing, cinematography, and editing.
+            I am a filmmaker drawn to raw stories, unique visuals, and emotionally grounded narratives. With a background in directing, cinematography, and editing, I bring a distinct voice to every project.
         </p>
-        <!-- Add more background information here -->
+        <!-- You can expand this section as needed -->
     </section>
 
     <section id="projects">
@@ -87,13 +122,9 @@
             <h3>Project Title One</h3>
             <p><strong>Role:</strong> Director, Editor</p>
             <div class="video-container">
-                <!-- Replace YOUR_VIDEO_ID with actual YouTube ID -->
                 <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" allowfullscreen></iframe>
             </div>
-            <p>
-                <!-- Optional project description -->
-                A short film exploring human emotion through visual metaphor.
-            </p>
+            <p>A short narrative film focusing on isolation and inner conflict. Shot on 16mm.</p>
         </div>
 
         <div class="project">
@@ -102,25 +133,22 @@
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" allowfullscreen></iframe>
             </div>
-            <p>
-                <!-- Optional project description -->
-                A commercial shoot highlighting the elegance of natural light.
-            </p>
+            <p>Music video blending dreamlike visuals with handheld intimacy.</p>
         </div>
 
         <!-- Add more project blocks as needed -->
     </section>
 
     <section id="contact">
-        <h2>Contact & Info</h2>
+        <h2>Contact</h2>
         <p><strong>Email:</strong> <a href="mailto:yourname@example.com">yourname@example.com</a></p>
         <p><strong>Instagram:</strong> <a href="https://instagram.com/yourhandle" target="_blank">@yourhandle</a></p>
-        <!-- Add more contact links or info -->
+        <!-- You can add more platforms or links -->
     </section>
 
     <footer>
-        <p>© 2025 Your Name – Filmmaker Portfolio</p>
-        <p>Website designed with care and a green spark</p>
+        <p>© 2025 Your Name | All Rights Reserved</p>
+        <p>Crafted in the shadows with green light</p>
     </footer>
 
 </body>
