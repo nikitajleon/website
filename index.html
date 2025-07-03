@@ -1,130 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Filmmaking Portfolio</title>
-  <style>
-    body {
-      background-color: #1a1a1a;
-      color: #b2ff59;
-      font-family: 'Courier New', monospace;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #000;
-      padding: 30px;
-      text-align: center;
-      border-bottom: 3px dashed #b2ff59;
-    }
-
-    h1 {
-      font-size: 36px;
-      margin: 0;
-      letter-spacing: 2px;
-    }
-
-    section {
-      padding: 40px 20px;
-      border-bottom: 1px dashed #333;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    iframe {
-      width: 100%;
-      max-width: 640px;
-      height: 360px;
-      border: none;
-      margin: 20px 0;
-    }
-
-    .project {
-      margin-bottom: 60px;
-      background-color: #111;
-      padding: 20px;
-      border: 1px solid #333;
-    }
-
-    .project h3 {
-      margin: 0;
-      color: #76ff03;
-    }
-
-    .project p {
-      font-size: 14px;
-      color: #cfcfcf;
-    }
-
-    footer {
-      background-color: #000;
-      color: #b2ff59;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      border-top: 3px dashed #b2ff59;
-    }
-
-    .highlight {
-      color: #00ff00;
-      font-weight: bold;
-    }
-
-    /* Optional: Add noise/grunge look using background images or effects later */
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Filmmaking Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #1f1f1f;
+            color: #00ff88;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        section {
+            padding: 2rem 1rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            color: #00cc66;
+            border-bottom: 2px solid #00cc66;
+            padding-bottom: 0.5rem;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            margin-bottom: 1rem;
+        }
+        .video-container iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .project {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 1rem;
+        }
+        footer {
+            background-color: #1f1f1f;
+            color: #ccc;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+        a {
+            color: #00ff88;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1>MY FILMMAKING PORTFOLIO</h1>
-    <p class="highlight">SHOWREEL</p>
-    <!-- Replace VIDEO_ID with your actual showreel YouTube video ID -->
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
-  </header>
+    <header>
+        <h1>My Filmmaking Portfolio</h1>
+        <p>Welcome to my visual journey in film</p>
+        <div class="video-container">
+            <!-- Showreel Embed -->
+            <iframe src="https://www.youtube.com/embed/YOUR_SHOWREEL_ID_HERE" allowfullscreen></iframe>
+        </div>
+    </header>
 
-  <section id="about" class="container">
-    <h2>About Me</h2>
-    <p>
-      <!-- Add your bio here -->
-      I'm a passionate filmmaker with a love for storytelling through visuals. I specialize in directing, editing, and cinematography.
-      <!-- Leave more space for expansion -->
-    </p>
-  </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            <!-- Add your bio here -->
+            I’m a filmmaker passionate about storytelling through visuals. I specialize in directing, cinematography, and editing.
+        </p>
+        <!-- Add more background information here -->
+    </section>
 
-  <section id="projects" class="container">
-    <h2>My Projects</h2>
+    <section id="projects">
+        <h2>Projects</h2>
 
-    <div class="project">
-      <h3>Project Title 1</h3>
-      <p>Role: Director, Editor</p>
-      <!-- Replace VIDEO_ID with actual YouTube video ID -->
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
-    </div>
+        <div class="project">
+            <h3>Project Title One</h3>
+            <p><strong>Role:</strong> Director, Editor</p>
+            <div class="video-container">
+                <!-- Replace YOUR_VIDEO_ID with actual YouTube ID -->
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" allowfullscreen></iframe>
+            </div>
+            <p>
+                <!-- Optional project description -->
+                A short film exploring human emotion through visual metaphor.
+            </p>
+        </div>
 
-    <div class="project">
-      <h3>Project Title 2</h3>
-      <p>Role: Cinematographer</p>
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
-    </div>
+        <div class="project">
+            <h3>Project Title Two</h3>
+            <p><strong>Role:</strong> Cinematographer</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" allowfullscreen></iframe>
+            </div>
+            <p>
+                <!-- Optional project description -->
+                A commercial shoot highlighting the elegance of natural light.
+            </p>
+        </div>
 
-    <!-- Duplicate the .project div to add more projects as needed -->
-  </section>
+        <!-- Add more project blocks as needed -->
+    </section>
 
-  <section id="contact" class="container">
-    <h2>Contact Info</h2>
-    <p>Email: <a href="mailto:your.email@example.com" style="color: #76ff03;">your.email@example.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/yourhandle" target="_blank" style="color: #76ff03;">@yourhandle</a></p>
-    <!-- Add more contact links or social platforms if needed -->
-  </section>
+    <section id="contact">
+        <h2>Contact & Info</h2>
+        <p><strong>Email:</strong> <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/yourhandle" target="_blank">@yourhandle</a></p>
+        <!-- Add more contact links or info -->
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
-    <p>More updates coming soon...</p>
-  </footer>
+    <footer>
+        <p>© 2025 Your Name – Filmmaker Portfolio</p>
+        <p>Website designed with care and a green spark</p>
+    </footer>
 
 </body>
 </html>
