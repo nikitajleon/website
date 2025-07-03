@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Filmmaking Portfolio</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #b2ff59;
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #000;
+      padding: 30px;
+      text-align: center;
+      border-bottom: 3px dashed #b2ff59;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    section {
+      padding: 40px 20px;
+      border-bottom: 1px dashed #333;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 640px;
+      height: 360px;
+      border: none;
+      margin: 20px 0;
+    }
+
+    .project {
+      margin-bottom: 60px;
+      background-color: #111;
+      padding: 20px;
+      border: 1px solid #333;
+    }
+
+    .project h3 {
+      margin: 0;
+      color: #76ff03;
+    }
+
+    .project p {
+      font-size: 14px;
+      color: #cfcfcf;
+    }
+
+    footer {
+      background-color: #000;
+      color: #b2ff59;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      border-top: 3px dashed #b2ff59;
+    }
+
+    .highlight {
+      color: #00ff00;
+      font-weight: bold;
+    }
+
+    /* Optional: Add noise/grunge look using background images or effects later */
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MY FILMMAKING PORTFOLIO</h1>
+    <p class="highlight">SHOWREEL</p>
+    <!-- Replace VIDEO_ID with your actual showreel YouTube video ID -->
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+  </header>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>
+      <!-- Add your bio here -->
+      I'm a passionate filmmaker with a love for storytelling through visuals. I specialize in directing, editing, and cinematography.
+      <!-- Leave more space for expansion -->
+    </p>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>My Projects</h2>
+
+    <div class="project">
+      <h3>Project Title 1</h3>
+      <p>Role: Director, Editor</p>
+      <!-- Replace VIDEO_ID with actual YouTube video ID -->
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+    </div>
+
+    <div class="project">
+      <h3>Project Title 2</h3>
+      <p>Role: Cinematographer</p>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+    </div>
+
+    <!-- Duplicate the .project div to add more projects as needed -->
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact Info</h2>
+    <p>Email: <a href="mailto:your.email@example.com" style="color: #76ff03;">your.email@example.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/yourhandle" target="_blank" style="color: #76ff03;">@yourhandle</a></p>
+    <!-- Add more contact links or social platforms if needed -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    <p>More updates coming soon...</p>
+  </footer>
+
+</body>
+</html>
